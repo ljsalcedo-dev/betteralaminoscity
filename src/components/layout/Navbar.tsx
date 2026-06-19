@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
 import {
-  X,
-  Menu,
+  CheckCircle2,
   ChevronDown,
   Globe,
+  Menu,
   Search,
-  CheckCircle2,
+  X,
 } from 'lucide-react';
-import { mainNavigation } from '../../data/navigation';
-import type { LanguageType } from '../../types/index';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { mainNavigation } from '../../data/navigation';
 import { LANGUAGES } from '../../i18n/languages';
+import type { LanguageType } from '../../types/index';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const { t, i18n } = useTranslation('common');
@@ -48,6 +48,7 @@ const Navbar: React.FC = () => {
               href="https://bettergov.ph/join-us"
               className="text-xs text-primary-600 hover:text-primary-700 font-semibold transition-colors"
               target="_blank"
+              rel="noopener noreferrer"
             >
               🚀 Join Us
             </a>
@@ -55,6 +56,7 @@ const Navbar: React.FC = () => {
               href="https://bettergov.ph/about"
               className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
               target="_blank"
+              rel="noopener noreferrer"
             >
               About BetterGov
             </a>
@@ -62,6 +64,7 @@ const Navbar: React.FC = () => {
               href="https://www.gov.ph"
               className="text-xs text-gray-800 hover:text-primary-600 transition-colors"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Official Gov.ph
             </a>
@@ -174,6 +177,7 @@ const Navbar: React.FC = () => {
           {/* Mobile menu button */}
           <div className="lg:hidden flex items-center">
             <button
+              type="button"
               onClick={toggleMenu}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
             >
@@ -194,6 +198,7 @@ const Navbar: React.FC = () => {
           {mainNavigation.map(item => (
             <div key={item.label}>
               <button
+                type="button"
                 onClick={() => toggleSubmenu(item.label)}
                 className="w-full flex justify-between items-center px-4 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary-500"
               >
