@@ -85,11 +85,13 @@ export default function ComingSoon() {
         style={{ color: '#162456' }}
       >
         <div
-          className="flex items-center gap-2 text-sm font-medium mb-20"
+          className="flex items-center gap-3 text-sm font-medium mb-20"
           style={{ opacity: 0.5 }}
         >
           <CheckCircle2 className="h-4 w-4" />
           <span>BetterAlaminosCity.org</span>
+          <span>·</span>
+          <span>BetterGov.ph</span>
         </div>
 
         <div className="mb-20">
