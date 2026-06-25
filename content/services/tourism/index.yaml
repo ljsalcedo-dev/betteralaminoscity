@@ -1,0 +1,17 @@
+
+pages:
+  - name: 'Apply for tourism permits and licenses'
+    slug: 'apply-for-tourism-permits-and-licenses'
+    description: 'Information on how to apply for necessary permits and licenses for tourism-related activities.'
+
+  - name: 'Access tourism development programs'
+    slug: 'access-tourism-development-programs'
+    description: 'Learn about various tourism development programs available for local businesses and communities.'
+
+  - name: 'Participate in cultural and heritage tours'
+    slug: 'participate-in-cultural-and-heritage-tours'
+    description: 'Find out how to join cultural and heritage tours organized by local tourism offices.'
+
+  - name: 'Get information on tourist attractions and events'
+    slug: 'get-information-on-tourist-attractions-and-events'
+    description: 'Stay updated on the latest tourist attractions, events, and activities in your area.'
